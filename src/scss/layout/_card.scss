@@ -1,1 +1,13 @@
+.card-section {
+  background-image: linear-gradient(to bottom, $silver, $pale-grey);
+}
 
+.card {
+  background-color: $white;
+}
+
+.fa-solid,
+.fa-brands,
+.fa-light {
+  color: $dark-gree-blue;
+}
