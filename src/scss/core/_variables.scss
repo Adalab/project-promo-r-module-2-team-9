@@ -1,4 +1,16 @@
 // fonts
-
+$font-merri: 'Merriweather', serif;
+$font-sans: 'Open Sans', sans-serif;
 
 // colors
+$black: #000000;
+$dark-gree-blue: #114e4e;
+$dirty-blue: #438792;
+$hospital-green: #a2deaf;
+$light-kaki: #f9f4dc;
+$white: #ffffff;
+$dull-orange: #e17334;
+
+:root{ 
+    font: $font-sans;
+}
