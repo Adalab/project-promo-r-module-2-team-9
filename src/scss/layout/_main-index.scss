@@ -12,10 +12,12 @@
         justify-content: center;
         align-items: center;
         &__title{
+            padding-top: 35.4px;
+            padding-bottom: 10px;
             color: $dull-orange;
             font-family: $font-merri;
             font-size: 19.2px;
-            font-weight: 900;
+            font-weight: 900; 
         }
         &__text{
             color: $dark-gree-blue;
@@ -23,6 +25,7 @@
             width: 230px;
             text-align: center;
             padding-bottom: 17.8px;
+            font-family: $font-sans;
         }
     }
     .section-2{
@@ -31,15 +34,36 @@
         align-items: center;
         width: 100%;
         gap: 24px;
+        border: 1px solid rgba(225, 115, 52, 0.21);
+        border-style: dotted;
         &__option{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 10px;
+            padding: 12px;
+            line-height: 1.5;
         }
         &__text{
+            color: $gunmetal;
+        }
+        i{
+            font-size: 22.4px;
             color: $dull-orange;
         }
+    }
+    .button{
+        margin-top: 38.6px;
+        margin-bottom: 30px;
+        background-color: $dirty-blue;
+        width: 129px;
+        height: 42px;
+        border: none;
+        border-radius: 21px;
+        color: $white;
+        text-transform: uppercase;
+        font-family: $font-sans;
+        font-size: 16px;
+        font-weight: 600;
     }
 }
