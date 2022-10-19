@@ -1,9 +1,41 @@
+.reset {
+  border: solid 1px $white;
+  border-radius: 15px;
+  color: $gunmetal;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0 0 20px 8px;
+  padding: 1px 10px;
+  background-color: transparent;
+}
+
 .card-section {
   background-image: linear-gradient(to bottom, $silver, $pale-grey);
+  padding: 38px 35px 40px 45px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
   background-color: $white;
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    background-image: url('../images/Radia-Perlman-square.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 127px;
+    margin: 10px 0;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .fa-solid,
