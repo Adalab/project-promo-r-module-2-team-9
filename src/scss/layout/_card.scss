@@ -1,9 +1,21 @@
+.card-section {
+  background-image: linear-gradient(to bottom, $silver, $pale-grey);
+  padding: 38px 35px 40px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .reset {
   border: solid 1px $white;
   border-radius: 15px;
   margin-bottom: 20px;
   padding: 1px 10px;
   background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  right: 80px;
 
   &__button {
     background-color: transparent;
@@ -12,18 +24,14 @@
     font-size: 12px;
     line-height: 20px;
     color: $gunmetal;
+    //debería salir por defecto
     font-family: $font-sans;
+    cursor: pointer;
+
+    &:hover {
+      color: $white;
+    }
   }
-}
-
-.card-section {
-  background-image: linear-gradient(to bottom, $silver, $pale-grey);
-  padding: 38px 35px 40px 45px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .card {
@@ -32,7 +40,9 @@
   flex-direction: column;
   font-family: $font-montse;
   line-height: 20px;
-  padding-top: 21px;
+  padding: 21px 0 12px;
+  border-radius: 2px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 
   &__text {
     padding-left: 20px;
@@ -53,8 +63,6 @@
 
   &__image {
     background-image: url('../images/Radia-Perlman-square.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
     width: 240px;
     height: 200px;
     margin: 10px 0;
@@ -63,11 +71,22 @@
   &__social {
     display: flex;
     justify-content: flex-start;
-  }
-}
+    margin-left: 10px;
 
-.fa-solid,
-.fa-brands,
-.fa-regular {
-  color: $dark-gree-blue;
+    .fa-solid,
+    .fa-brands,
+    .fa-regular {
+      color: $dark-gree-blue;
+      font-size: 18px;
+      margin-right: 10px;
+      //revisar padding por icono
+      padding: 8px 7.5px 6px;
+      border-radius: 16px;
+      border: solid 2px $hospital-green;
+
+      &:hover {
+        color: $hospital-green;
+      }
+    }
+  }
 }
