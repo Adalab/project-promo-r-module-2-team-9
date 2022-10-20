@@ -1,9 +1,36 @@
- <form method="get" action=""> <!--aquí va el link en js -->
+<form method="get" action="">
+    <!--aquí va el link en js -->
     <fieldset>
         <legend>Diseña</legend>
         <div>
-        <input type="button" id="colors" type="radio" value="colors" name="colors">
-        
+            <input type="button" id="colors" type="radio" value="colors" name="colors">
+
+        </div>
+    </fieldset>
+
+</form>
+
+
+<form method="get" action="">
+    <fieldset>
+        <legend>Rellena</legend>
+        <div class="stuffed">
+            <label class="" for="firstName">Nombre completo</label>
+            <input class="" placeholder="Nombre..." id="firstName" type="text" name="firstName" required />
+            <label class="" for="job">Puesto</label>
+            <input class="" placeholder="Nombre..." id="job" type="text" name="job" required />
+            <label class="" for="firstName">Imagen de perfil</label>
+            <input class="" />
+            <label class="" for="emailAddress">Email </label>
+            <input class="" placeholder="Ej: sally.hill@gmail.com" type="email" id="emailAddress" name="emailAddress"
+                required />
+            <label class="" for="telephone">Teléfono</label>
+            <input class="" placeholder="Ej: 555-55-55-55" type="tel" id="telephone" name="telephone" />
+            <label class="" for="linkedin">Linkedin</label>
+            <input class="" placeholder="Ej: linkedin.com/in/sally-hill" id="linkedin" type="text" name="linkedin"
+                required />
+            <label class="" for="github">Github</label>
+            <input class="" placeholder="Ej: @sally-hill" id="github" type="text" name="github" required />
         </div>
     </fieldset>
 
