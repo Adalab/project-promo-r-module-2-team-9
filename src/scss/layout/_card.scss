@@ -7,6 +7,7 @@
   margin: 0 0 20px 8px;
   padding: 1px 10px;
   background-color: transparent;
+  font-family: montserrat;
 }
 
 .card-section {
@@ -23,6 +24,7 @@
   background-color: $white;
   display: flex;
   flex-direction: column;
+  font-family: $font-montse;
 
   &__image {
     background-image: url('../images/Radia-Perlman-square.jpg');
