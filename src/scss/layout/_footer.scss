@@ -5,9 +5,7 @@
   padding: 2em;
   background-color: $white;
   height: 110px;
-  border-style: solid hidden hidden hidden;
-  border-top-color: $silver;
-  border-width: 1px;
+  border-top: 1px solid $silver;
   &__small {
     color: $gris-pardusco;
     font-size: 14px;
