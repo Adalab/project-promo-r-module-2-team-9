@@ -25,7 +25,6 @@
             width: 230px;
             text-align: center;
             padding-bottom: 17.8px;
-            font-family: $font-sans;
         }
     }
     .section-2{
@@ -41,11 +40,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 12px;
             line-height: 1.5;
+            padding: 7px;
         }
         &__text{
             color: $gunmetal;
+            font-size: 12.8px;
         }
         i{
             font-size: 22.4px;
@@ -58,12 +58,14 @@
         background-color: $dirty-blue;
         width: 129px;
         height: 42px;
-        border: none;
         border-radius: 21px;
         color: $white;
         text-transform: uppercase;
-        font-family: $font-sans;
         font-size: 16px;
         font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        line-height: 42px;
+        cursor: pointer;
     }
 }
