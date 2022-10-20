@@ -1,13 +1,19 @@
 .reset {
   border: solid 1px $white;
   border-radius: 15px;
-  color: $gunmetal;
-  font-size: 12px;
-  line-height: 20px;
-  margin: 0 0 20px 8px;
+  margin-bottom: 20px;
   padding: 1px 10px;
   background-color: transparent;
-  font-family: montserrat;
+
+  &__button {
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 20px;
+    color: $gunmetal;
+    font-family: $font-sans;
+  }
 }
 
 .card-section {
@@ -25,12 +31,32 @@
   display: flex;
   flex-direction: column;
   font-family: $font-montse;
+  line-height: 20px;
+  padding-top: 21px;
+
+  &__text {
+    padding-left: 20px;
+    border-left: $dirty-blue solid 5px;
+
+    &_title {
+      color: $dark-gree-blue;
+      font-weight: 700;
+      font-size: 18px;
+      text-transform: capitalize;
+    }
+
+    &_subtitle {
+      color: $gunmetal;
+      font-size: 16px;
+    }
+  }
 
   &__image {
     background-image: url('../images/Radia-Perlman-square.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 127px;
+    width: 240px;
+    height: 200px;
     margin: 10px 0;
   }
 
@@ -42,6 +68,6 @@
 
 .fa-solid,
 .fa-brands,
-.fa-light {
+.fa-regular {
   color: $dark-gree-blue;
 }
