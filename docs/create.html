@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create your Awesome Profile-Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Open+Sans:wght@400;500;600;700&display=family=Montserrat:wght@400;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/176ed70a85.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" class="css" href="./assets/css/main.css">
+</head>
+
+<body>
+    <div class="header"> <img class="header__img" src="./assets/images/logo-awesome-profile-cards.svg" alt="logo awesome">
+    </div>
+    <main>
+        <section class="card-section">
+            <div class="reset">
+                <i class="fa-solid fa-trash-can reset__button"></i>
+                <button type="reset" class="reset__button" title="Reset button">Reset</button>
+            </div>
+            <article class="card">
+                <div class="card__text">
+                    <h3 class="card__text_title">Nombre apellido</h3>
+                    <p class="card__text_subtitle">Front-end developer</p>
+                </div>
+                <div class="card__image" title="Preview image" alt="Preview image"></div>
+                <ul class="card__social">
+                    <li>
+                        <a href="" target="_blank" title="Telephone" alt="Telephone">
+                            <i class="fa-solid fa-mobile-screen"></i></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" title="E-mail" alt="E-mail">
+                            <i class="fa-regular fa-envelope"></i></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" title="LinkedIn" alt="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" title="Github" alt="Github">
+                            <i class="fa-brands fa-github-alt"></i></a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <!------------------------DISEÑA------------------------------------>
+
+        <form method="get" action="" class="form">
+            <!--aquí va el link en js -->
+            <fieldset>
+                <div class="option">
+                    <i class="fa-regular fa-object-ungroup"></i>
+                    <h3 class="option__title">Diseña</h3>
+                    <i class="far fa-objetc-ungroup"></i>
+                </div>
+
+                <div class="election">
+                    <legend class="desing__title">Colores</legend>
+
+                    <label for="option1">
+                        <input type="radio" id="option1" value="colors1" name="colors-options">
+                        <img src="./assets/images/palette-color-1.png" alt="Palette-color1">
+                    </label>
+
+                    <label for="option2">
+                        <input type="radio" id="option2" value="colors2" name="colors-options">
+                        <img src="./assets/images/palette-color-2.png" alt="Palette-color2">
+                    </label>
+
+                    <label for="option3">
+                        <input type="radio" id="option3" value="colors3" name="colors-options">
+                        <img src="./assets/images/palette-color-3.png" alt="Palette-color3">
+                    </label>
+                </div>
+            </fieldset>
+
+            <!------------------------RELLENA------------------------------------>
+
+            <fieldset>
+
+                <div class="option">
+                    <i class="fa-regular fa-keyboard"></i>
+                    <h3 class="option__title">Rellena</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <div class="stuffed">
+                    <label class="stuffed__label" for="firstName">Nombre completo</label>
+                    <input class="stuffed__input" placeholder="Ej: Sally Jill" id="firstName" type="text" name="firstName"
+                        required />
+
+                    <label class="stuffed__label" for="job">Puesto</label>
+                    <input class="stuffed__input" placeholder="Ej: Front-end unicorn" id="job" type="text" name="job"
+                        required />
+
+                    <label class="stuffed__label" for="profileImage">Imagen de perfil</label>
+                    <input type="button" class="add-image" value="Añadir imagen" id="profileImage" title="Add image" />
+
+                    <label class=" stuffed__label" for=" emailAddress">Email </label>
+                    <input class="stuffed__input" placeholder="Ej: sally.hill@gmail.com" type="email" id="emailAddress"
+                        name="emailAddress" required />
+
+                    <label class="stuffed__label" for="telephone">Teléfono</label>
+                    <input class="stuffed__input" placeholder="Ej: 555-55-55-55" type="tel" id="telephone" name="telephone" />
+
+                    <label class="stuffed__label" for="linkedin">Linkedin</label>
+                    <input class="stuffed__input" placeholder="Ej: linkedin.com/in/sally-hill" id="linkedin" type="text"
+                        name="linkedin" required />
+                    <label class="stuffed__label" for="github">Github</label>
+                    <input class="stuffed__input" placeholder="Ej: @sally-hill" id="github" type="text" name="github"
+                        required />
+                </div>
+
+            </fieldset>
+
+
+            <!------------------------COMPARTE------------------------------------>
+
+            <div class="option">
+                <i class="fa-regular fa-object-ungroup"></i>
+                <h3 class="option__title">Comparte</h3>
+                <i class="fa-regular fa-angle-down"></i>
+            </div>
+            <div></div>
+
+
+
+        </form>
+    </main>
+    <footer class="footer">
+        <small class="footer__small">Awesome profile-cards © 2022</small>
+        <a href="./index.html"><img class="footer__logo" src="./assets/images/logo-adalab.png" alt="Logo Adalab"></a>
+    </footer>
+</body>
+
+</html>
