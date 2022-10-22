@@ -53,30 +53,34 @@
 
         <form method="get" action="" class="form">
             <!--aquí va el link en js -->
-            <fieldset>
+            <fieldset class="design">
                 <div class="option">
-                    <i class="fa-regular fa-object-ungroup"></i>
-                    <h3 class="option__title">Diseña</h3>
-                    <i class="far fa-objetc-ungroup"></i>
+                    <span class="option__span">
+                        <i class="fa-regular fa-object-ungroup"></i>
+                        <h3 class="option__title">Diseña</h3>
+                    </span>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </div>
 
                 <div class="election">
-                    <legend class="desing__title">Colores</legend>
+                    <legend class="election__title">Colores</legend>
 
-                    <label for="option1">
-                        <input type="radio" id="option1" value="colors1" name="colors-options">
-                        <img src="./assets/images/palette-color-1.png" alt="Palette-color1">
-                    </label>
+                    <span class="election__span">
+                        <label class="election__option" for="option">
+                            <input class="election__input" type="radio" id="option" value="colors1" name="colors-options">
+                            <img class="election__img" src="./assets/images/palette-color-1.png" alt="Palette-color1">
+                        </label>
 
-                    <label for="option2">
-                        <input type="radio" id="option2" value="colors2" name="colors-options">
-                        <img src="./assets/images/palette-color-2.png" alt="Palette-color2">
-                    </label>
+                         <label class="election__option" for="option">
+                            <input class="election__input" type="radio" id="option" value="colors2" name="colors-options">
+                            <img class="election__img" src="./assets/images/palette-color-2.png" alt="Palette-color2">
+                        </label>
 
-                    <label for="option3">
-                        <input type="radio" id="option3" value="colors3" name="colors-options">
-                        <img src="./assets/images/palette-color-3.png" alt="Palette-color3">
-                    </label>
+                        <label class="election__option" for="option">
+                            <input class="election__input" type="radio" id="option" value="colors3" name="colors-options">
+                            <img class="election__img" src="./assets/images/palette-color-3.png" alt="Palette-color3">
+                        </label>
+                    </span>
                 </div>
             </fieldset>
 
@@ -85,8 +89,10 @@
             <fieldset>
 
                 <div class="option">
-                    <i class="fa-regular fa-keyboard"></i>
-                    <h3 class="option__title">Rellena</h3>
+                    <span class="option__span">
+                        <i class="fa-regular fa-keyboard"></i>
+                        <h3 class="option__title">Rellena</h3>
+                    </span>
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
 
@@ -123,9 +129,11 @@
             <!------------------------COMPARTE------------------------------------>
 
             <div class="option">
-                <i class="fa-regular fa-object-ungroup"></i>
-                <h3 class="option__title">Comparte</h3>
-                <i class="fa-regular fa-angle-down"></i>
+                <span class="option__span">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <h3 class="option__title">Comparte</h3>
+                </span>
+                <i class="fa-solid fa-chevron-down"></i>
             </div>
             <div></div>
 
