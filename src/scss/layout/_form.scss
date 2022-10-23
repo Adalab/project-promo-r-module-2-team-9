@@ -1,13 +1,112 @@
+.form {
+  background-image: linear-gradient(to bottom, var($white-four), var($white-two) 9%);
+  padding: 27px 20px 31px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
 //------------------------DISEÑA------------------------------------//
 
+.design{
+  border-bottom: solid $white-two 1.5px;  //esto hay que darselo a cada fieldset
+}
 
+.option{
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  
+  &__span{
+    display: flex;
+    flex-direction: row;
+    color: $dull-orange;
+    font-size: 18px;
+  }
 
+  &__title{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $gunmetal;
+    margin-left: 10px;
+  }
+}
+
+.election{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+
+  &__title{
+    color: $gunmetal;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 25px;
+  }
+
+  &__span{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__option{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  &__input{
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+  }
+
+  &__img{
+    width: 100px;
+  }
+}
 
 
 //------------------------RELLENA------------------------------------//
+
 .stuffed {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+
+  &__label {
+    color: $dark-gree-blue;
+    font-size: 14px;
+    margin-bottom: 7px;
+    line-height: 20px;
+  }
+
+  &__input {
+    border: solid 1px $hospital-green;
+    margin-bottom: 20px;
+    height: 30px;
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+
+  .add-image {
+    width: 140px;
+    height: 30px;
+    background-color: $dull-orange;
+    color: $white;
+    border: none;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
 }
 
 //------------------------COMPARTE------------------------------------//
