@@ -5,6 +5,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media all and (min-width: 768px){
+    justify-content:flex-start;
+    padding-top: 230px;
+    width: 50%;
+    border-radius: 6px;
+  }
 }
 
 .reset {
