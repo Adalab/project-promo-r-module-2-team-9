@@ -8,6 +8,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media all and (min-width: 768px){
+    padding: 0;
+    width: 50%;
+  }
+  
 }
 
 //------------------------DISEÑA------------------------------------//
@@ -21,8 +26,13 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
-
-  &__span {
+  @media all and (min-width: 768px){
+    padding-left: 0;
+    margin-right: 0px;
+    width: 100%;
+  }
+  
+  &__span{
     display: flex;
     flex-direction: row;
     color: $dull-orange;
@@ -80,6 +90,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  border-bottom: solid $white-two 1.5px;
 
   &__label {
     color: $dark-gree-blue;

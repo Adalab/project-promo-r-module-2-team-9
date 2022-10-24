@@ -11,3 +11,16 @@
 .body{
     height: 100vh;
 }
+
+.main-create{
+    @media all and (min-width: 768px){
+        background-image: linear-gradient(to bottom, $white-four, $white 9%);
+        padding: 20px 40px 20px 39px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 30px;
+      
+    }
+   
+}
