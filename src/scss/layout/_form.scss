@@ -1,5 +1,9 @@
 .form {
-  background-image: linear-gradient(to bottom, var($white-four), var($white-two) 9%);
+  background-image: linear-gradient(
+    to bottom,
+    var($white-four),
+    var($white-two) 9%
+  );
   padding: 27px 20px 31px 20px;
   display: flex;
   flex-direction: column;
@@ -13,11 +17,11 @@
 
 //------------------------DISEÑA------------------------------------//
 
-.design{
-  border-bottom: solid $white-two 1.5px;  //esto hay que darselo a cada fieldset
+.design {
+  border-bottom: solid $white-two 1.5px; //esto hay que darselo a cada fieldset
 }
 
-.option{
+.option {
   width: 280px;
   display: flex;
   justify-content: space-between;
@@ -35,7 +39,7 @@
     font-size: 18px;
   }
 
-  &__title{
+  &__title {
     text-transform: uppercase;
     font-weight: 600;
     color: $gunmetal;
@@ -43,43 +47,42 @@
   }
 }
 
-.election{
+.election {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding: 10px;
 
-  &__title{
+  &__title {
     color: $gunmetal;
     font-size: 14px;
     text-transform: uppercase;
     margin-left: 25px;
   }
 
-  &__span{
+  &__span {
     display: flex;
     flex-direction: column;
   }
 
-  &__option{
+  &__option {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-bottom: 20px;
   }
 
-  &__input{
+  &__input {
     width: 17px;
     height: 17px;
     margin-right: 10px;
   }
 
-  &__img{
+  &__img {
     width: 100px;
   }
 }
-
 
 //------------------------RELLENA------------------------------------//
 
@@ -120,28 +123,27 @@
 }
 
 //------------------------COMPARTE------------------------------------//
-.share{
+.share {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-bottom: solid $white-two 1.5px;
-  &__button{
+  &__button {
     margin: 30px 0px 30px 0px;
-  background-color: $dull-orange;
-  width: 199px;
-  height: 50px;
-  color: white;
-  font-size: 18px;
-  font-family: $font-sans;
-  text-transform: uppercase;
-  font-weight: 600;
-  border-radius: 12px;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-  border: none;
+    background-color: $dull-orange;
+    width: 199px;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    font-family: $font-sans;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    border: none;
   }
-
 }
-.share-icon{
+.share-icon {
   color: $dull-orange;
   background-color: white;
   font-size: 22px;
@@ -151,21 +153,20 @@
   margin-right: 9px;
 }
 
-
-.created{
+.created {
   border-bottom: solid $white-two 1.5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &__title{
+  &__title {
     margin-top: 20px;
     color: $gunmetal;
     font-size: 18px;
     font-weight: 600;
     font-family: $font-sans;
   }
-  &__link{
+  &__link {
     text-decoration: none;
     color: $dull-orange;
     font-size: 12px;
@@ -173,7 +174,7 @@
     font-family: $font-sans;
     margin-top: 5px;
   }
-  .twitter{
+  .twitter {
     margin: 10px auto 30px auto;
     background-color: #00a0f5;
     color: white;
@@ -187,7 +188,7 @@
     border-radius: 3px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
   }
-  .twitter-icon{
+  .twitter-icon {
     color: white;
     font-size: 18px;
     margin-right: 9.5px;
