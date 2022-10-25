@@ -1,5 +1,3 @@
-// eslint-disable-next-line strict
-console.log('colors');
 
 // const option1Input=document.querySelector('.js-input-1');
 // const option2Input=document.querySelector('.js-input-2');
@@ -19,8 +17,3 @@ console.log('colors');
 
 
 //     cardTitle.classList.remove('js-text-color-3');
-
-
-
-
-// })
