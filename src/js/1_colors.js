@@ -1,5 +1,3 @@
-//eslint-disable-next-line strict
-console.log('colors');
 
 // const option1Input=document.querySelector('.js-input-1');
 // const option2Input=document.querySelector('.js-input-2');
