@@ -5,28 +5,31 @@
     <fieldset class="design">
         <div class="option">
             <span class="option__span">
-                <i class="fa-regular fa-object-ungroup"></i>
+                <i class="fa-regular fa-object-ungroup "></i>
                 <h3 class="option__title">Diseña</h3>
             </span>
-            <i class="fa-solid fa-chevron-down"></i>
+            <i class="arrow fa-solid fa-chevron-down js_arrow-design turn-around "></i>
         </div>
 
-        <div class="election">
+        <div class="election js_color-election">
             <legend class="election__title">Colores</legend>
 
             <span class="election__span">
                 <label class="election__option" for="option">
-                    <input class="election__input js-input-1" type="radio" id="option" value="colors1" name="colors-options">
+                    <input class="election__input js-input-1" type="radio" id="option" value="colors1"
+                        name="colors-options">
                     <img class="election__img" src="./assets/images/palette-color-1.png" alt="Palette-color1">
                 </label>
 
                 <label class="election__option" for="option">
-                    <input class="election__input js-input-2" type="radio" id="option" value="colors2" name="colors-options">
+                    <input class="election__input js-input-2" type="radio" id="option" value="colors2"
+                        name="colors-options">
                     <img class="election__img" src="./assets/images/palette-color-2.png" alt="Palette-color2">
                 </label>
 
                 <label class="election__option" for="option">
-                    <input class="election__input js-input-3" type="radio" id="option" value="colors3" name="colors-options">
+                    <input class="election__input js-input-3" type="radio" id="option" value="colors3"
+                        name="colors-options">
                     <img class="election__img" src="./assets/images/palette-color-3.png" alt="Palette-color3">
                 </label>
             </span>
@@ -42,13 +45,14 @@
                 <i class="fa-regular fa-keyboard"></i>
                 <h3 class="option__title">Rellena</h3>
             </span>
-            <i class="fa-solid fa-chevron-down"></i>
+            <i class=" arrow fa-solid fa-chevron-down js_arrow-stuffed"></i>
         </div>
 
-        <div class="stuffed">
+        <div class="stuffed collapsed">
+            <!-- class = stuffed añadir con JS-->
             <label class="stuffed__label" for="firstName">Nombre completo</label>
-            <input class="stuffed__input js_input-name" placeholder="Ej: Sally Jill" id="firstName" type="text" name="firstName"
-                required />
+            <input class="stuffed__input js_input-name" placeholder="Ej: Sally Jill" id="firstName" type="text"
+                name="firstName" required />
 
             <label class="stuffed__label" for="job">Puesto</label>
             <input class="stuffed__input js_input-job" placeholder="Ej: Front-end unicorn" id="job" type="text"
@@ -89,13 +93,15 @@
                 <i class="fa-solid fa-share-nodes"></i>
                 <h3 class="option__title">Comparte</h3>
             </span>
-            <i class="fa-solid fa-chevron-down"></i>
+            <i class="arrow fa-solid fa-chevron-down js_arrow-share"></i>
         </div>
-        <div class="share">
+        <div class="share collapsed">
+            <!-- class = share añadir con JS-->
             <button class="share__button" name="create-card" value="create-card"> <i
                     class="fa-solid fa-address-card share-icon"></i> Crear tarjeta </button>
         </div>
-        <div class="created">
+        <div class=" created collapsed">
+            <!-- class = created añadir con JS-->
             <h4 class="created__title">La tarjeta ha sido creada:</h4>
             <a href="#" class="created__link">Link</a>
             <a href="#" class="twitter"> <i class="fa-brands fa-twitter twitter-icon"></i> Compartir en twitter</a>

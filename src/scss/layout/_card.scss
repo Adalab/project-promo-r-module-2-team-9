@@ -29,8 +29,6 @@
     font-size: 12px;
     line-height: 20px;
     color: $gunmetal;
-    //debería salir por defecto
-    font-family: $font-sans;
     cursor: pointer;
 
     &:hover {
@@ -66,7 +64,7 @@
   }
 
   &__image {
-    background-image: url("../images/Radia-Perlman-square.jpg");
+    background-image: url('../images/Radia-Perlman-square.jpg');
     width: 240px;
     height: 200px;
     margin: 10px 0;
