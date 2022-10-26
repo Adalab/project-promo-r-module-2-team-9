@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 'use strict';
 
+// eslint-disable-next-line no-console
 console.log('variables');
 
 const resetBtn = document.querySelector('.js_reset-btn');
