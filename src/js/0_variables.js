@@ -10,6 +10,7 @@ const emailInput = document.querySelector('.js_input-email');
 const tlfInput = document.querySelector('.js_input-tlf');
 const linInput = document.querySelector('.js_input-lin');
 const githupInput = document.querySelector('.js_input-githup');
+
 //variables para los datos de la card
 const previewName = document.querySelector('.js_preview-name');
 const previewJob = document.querySelector('.js_preview-job');
