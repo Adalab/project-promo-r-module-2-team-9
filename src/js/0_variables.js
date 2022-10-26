@@ -11,6 +11,7 @@ const emailInput = document.querySelector('.js_input-email');
 const tlfInput = document.querySelector('.js_input-tlf');
 const linInput = document.querySelector('.js_input-lin');
 const githupInput = document.querySelector('.js_input-githup');
+
 //variables para los datos de la card
 const previewName = document.querySelector('.js_preview-name');
 const previewJob = document.querySelector('.js_preview-job');
@@ -26,11 +27,13 @@ const arrowStuffed = document.querySelector('.js_arrow-stuffed');
 const arrowShare = document.querySelector('.js_arrow-share');
 
 const colorContainer = document.querySelector('.js_color-election');
-const option = document.querySelector('.js_option');
+const dataContainer = document.querySelector('.js_stuffed-data');
+const shareContainer = document.querySelector('.js_share');
+const shareCreated = document.querySelector('.js_created');
 
 //variables colors
 
-const paletteRadio1=document.querySelector('.js-input-1');
-const paletteRadio2=document.querySelector('.js-input-2');
-const paletteRadio3=document.querySelector('.js-input-3');
-const articleRadio=document.querySelector('.js-card');
+const paletteRadio1 = document.querySelector('.js-input-1');
+const paletteRadio2 = document.querySelector('.js-input-2');
+const paletteRadio3 = document.querySelector('.js-input-3');
+const articleRadio = document.querySelector('.js-card');

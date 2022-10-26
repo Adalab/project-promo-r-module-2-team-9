@@ -4,33 +4,81 @@
 /* eslint-disable no-console */
 // eslint-disable-next-line strict, no-console
 
-//FUNCIONES
+//----------------FUNCIONES
 
-//Design
-function arrowUp() {
+//DESIGN
+
+//Creamos función para girar la flecha mostrar y ocultar el contenido
+
+function arrowUpDesign() {
   arrowDesign.classList.add('turn-around');
+  colorContainer.classList.add('election');
 }
-function arrowDown() {
+function arrowDownDesign() {
   arrowDesign.classList.remove('turn-around');
-  colorContainer.classList.remove('option');
+  colorContainer.classList.remove('election');
   colorContainer.classList.add('collapsed');
 }
 
-function handleClickArrow() {
+//Creamos función manejadora para que use una función u otra dependiendo de como esté la flecha
+
+function handleClickArrowDesign() {
   if (arrowDesign.classList.contains('turn-around')) {
-    arrowDown();
+    arrowDownDesign();
   } else {
-    arrowUp();
+    arrowUpDesign();
   }
 }
 
-//EVENTOS
-arrowDesign.addEventListener('click', handleClickArrow);
+//STUFFED
 
-arrowStuffed.addEventListener('click', () => {
-  console.log('btn arrowStuffed');
-});
+function arrowUpStuffed() {
+  arrowStuffed.classList.add('turn-around');
+  dataContainer.classList.add('stuffed');
+}
+function arrowDownStuffed() {
+  arrowStuffed.classList.remove('turn-around');
+  dataContainer.classList.remove('stuffed');
+  dataContainer.classList.add('collapsed');
+}
 
-arrowShare.addEventListener('click', () => {
-  console.log('btn arrowShare');
-});
+function handleClickArrowStuffed() {
+  if (arrowStuffed.classList.contains('turn-around')) {
+    arrowDownStuffed();
+  } else {
+    arrowUpStuffed();
+  }
+}
+
+//SHARE
+
+function arrowUpShare() {
+  arrowShare.classList.add('turn-around');
+  shareContainer.classList.add('share');
+  shareCreated.classList.add('created');
+}
+function arrowDownShare() {
+  arrowShare.classList.remove('turn-around');
+  shareContainer.classList.remove('share');
+  shareCreated.classList.remove('created');
+  shareContainer.classList.add('collapsed');
+  shareCreated.classList.add('collapsed');
+}
+
+function handleClickArrowShare() {
+  if (arrowShare.classList.contains('turn-around')) {
+    arrowDownShare();
+  } else {
+    arrowUpShare();
+  }
+}
+
+//----------------EVENTOS
+
+//Creamos los eventos para los clicks de las flechas
+
+arrowDesign.addEventListener('click', handleClickArrowDesign);
+
+arrowStuffed.addEventListener('click', handleClickArrowStuffed);
+
+arrowShare.addEventListener('click', handleClickArrowShare);

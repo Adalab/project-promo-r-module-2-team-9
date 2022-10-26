@@ -81,8 +81,7 @@
       // color: $dark-gree-blue;
       font-size: 18px;
       margin-right: 10px;
-      //revisar padding por icono
-      padding: 8px 7.5px 6px;
+      padding: 7px;
       border-radius: 16px;
       border: solid 2px;
 
@@ -90,43 +89,49 @@
       //   color: $hospital-green;
       // }
     }
+    .fa-mobile-screen {
+      padding: 7px 10px;
+    }
+    .fa-brands {
+      padding: 7px 8px;
+    }
   }
 }
 
 //SECCIÓN JAVASCRIPT COLORES:
 
-.palette1{
-  .js-card-border{
+.palette1 {
+  .js-card-border {
     border-left: solid 5px $dirty-blue;
   }
-  .js-card-name{
+  .js-card-name {
     color: $dark-gree-blue;
   }
-  .js-card-icon{
+  .js-card-icon {
     color: $dark-gree-blue;
     border: solid 2px $hospital-green;
   }
 }
-.palette2{
-  .js-card-border{
+.palette2 {
+  .js-card-border {
     border-left: solid 5px $rusty-red;
   }
-  .js-card-name{
+  .js-card-name {
     color: $dried-blood;
   }
-  .js-card-icon{
+  .js-card-icon {
     color: $dried-blood;
     border: solid 2px $tomato;
   }
 }
-.palette3{
-  .js-card-border{
+.palette3 {
+  .js-card-border {
     border-left: solid 5px $faded-orange;
   }
-  .js-card-name{
+  .js-card-name {
     color: $slate;
   }
-  .js-card-icon{
+  .js-card-icon {
     color: $slate;
     border: solid 2px $light-grey-blue;
   }
