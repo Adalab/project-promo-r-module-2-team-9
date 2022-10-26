@@ -44,18 +44,18 @@
   font-family: $font-montse;
   line-height: 20px;
   padding: 21px 0 12px;
-  border-radius: 2px;
+  border-radius: 2px $hospital-green;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 
   &__text {
     padding-left: 20px;
-    border-left: $dirty-blue solid 5px;
+    border-left: solid 5px;
 
     &_title {
-      color: $dark-gree-blue;
       font-weight: 700;
       font-size: 18px;
       text-transform: capitalize;
+      // color: $dark-gree-blue;
     }
 
     &_subtitle {
@@ -78,61 +78,56 @@
     .fa-solid,
     .fa-brands,
     .fa-regular {
-      color: $dark-gree-blue;
+      // color: $dark-gree-blue;
       font-size: 18px;
       margin-right: 10px;
       //revisar padding por icono
       padding: 8px 7.5px 6px;
       border-radius: 16px;
-      border: solid 2px $hospital-green;
+      border: solid 2px;
 
-      &:hover {
-        color: $hospital-green;
-      }
+      // &:hover {
+      //   color: $hospital-green;
+      // }
     }
   }
 }
 
 //SECCIÓN JAVASCRIPT COLORES:
 
-// //SEGUNDA OPCIÓN:
-
-// .js-text-color-2 {
-//   border-left: $rusty-red solid 5px;
-//   padding-left: 20px;
-// }
-// .js-title-color-2 {
-//   color: $dried-blood;
-//   font-weight: 700;
-//   font-size: 18px;
-//   text-transform: capitalize;
-// }
-// .js-icon-color-2 {
-//   font-size: 18px;
-//   margin-right: 10px;
-//   padding: 8px 7.5px 6px;
-//   border-radius: 16px;
-//   color: $rusty-red;
-//   border: solid 2px $tomato;
-// }
-
-// //TERCERA OPCIÓN:
-
-// .js-text-color-3 {
-//   border-left: $faded-orange solid 5px;
-//   padding-left: 20px;
-// }
-// .js-title-color-3 {
-//   color: $slate;
-//   font-weight: 700;
-//   font-size: 18px;
-//   text-transform: capitalize;
-// }
-// .js-icon-color-3 {
-//   font-size: 18px;
-//   margin-right: 10px;
-//   padding: 8px 7.5px 6px;
-//   border-radius: 16px;
-//   color: $faded-orange;
-//   border: solid 2px $light-grey-blue;
-// }
+.palette1{
+  .js-card-border{
+    border-left: solid 5px $dirty-blue;
+  }
+  .js-card-name{
+    color: $dark-gree-blue;
+  }
+  .js-card-icon{
+    color: $dark-gree-blue;
+    border: solid 2px $hospital-green;
+  }
+}
+.palette2{
+  .js-card-border{
+    border-left: solid 5px $rusty-red;
+  }
+  .js-card-name{
+    color: $dried-blood;
+  }
+  .js-card-icon{
+    color: $dried-blood;
+    border: solid 2px $tomato;
+  }
+}
+.palette3{
+  .js-card-border{
+    border-left: solid 5px $faded-orange;
+  }
+  .js-card-name{
+    color: $slate;
+  }
+  .js-card-icon{
+    color: $slate;
+    border: solid 2px $light-grey-blue;
+  }
+}

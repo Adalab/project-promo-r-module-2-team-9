@@ -26,3 +26,10 @@ const arrowShare = document.querySelector('.js_arrow-share');
 
 const colorContainer = document.querySelector('.js_color-election');
 const option = document.querySelector('.js_option');
+
+//variables colors
+
+const paletteRadio1=document.querySelector('.js-input-1');
+const paletteRadio2=document.querySelector('.js-input-2');
+const paletteRadio3=document.querySelector('.js-input-3');
+const articleRadio=document.querySelector('.js-card');
