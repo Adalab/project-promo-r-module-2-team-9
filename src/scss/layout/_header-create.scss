@@ -1,0 +1,15 @@
+.header-create {
+  padding: 30px 79px 30px 40px;
+  background-color: $white;
+  &__img {
+    object-fit: cover;
+    width: 201px;
+    height: 50px;
+    object-fit: contain;
+  }
+}
+@media all and (min-width: 768px) {
+  .header-create {
+    padding: 30px 527px 30px 40px;
+  }
+}
