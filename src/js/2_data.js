@@ -27,3 +27,12 @@ jobInput.addEventListener('input', () => {
     }
 });
 
+emailInput.addEventListener('input', () => {
+    const email = emailInput.value;
+    const emailLink = previewEmail.href;
+
+    function insertLink () {
+        emailLink.innerHTML = `mailto: ${email}`;
+    }
+});
+

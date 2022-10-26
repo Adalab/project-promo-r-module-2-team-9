@@ -1,19 +1,26 @@
+/* eslint-disable strict */
+/* eslint-disable no-undef */
+/* eslint-disable no-console */
 
-// const option1Input=document.querySelector('.js-input-1');
-// const option2Input=document.querySelector('.js-input-2');
-// const option3Input=document.querySelector('.js-input-3');
+function deleteColors (){
+  articleRadio.classList.remove('palette1');
+  articleRadio.classList.remove('palette2');
+  articleRadio.classList.remove('palette3');
+}
 
-// const cardTitle=document.querySelector('.js-card-title');
-// const cardBorder=document.querySelector('.js-card-border');
-// const cardIcon=document.querySelector('.js-card-icon');
+paletteRadio1.addEventListener('click', () =>{
+  console.log('click 1');
+  deleteColors();
+  articleRadio.classList.add('palette1');
+});
+paletteRadio2.addEventListener('click', () =>{
+  deleteColors();
+  articleRadio.classList.add('palette2');
+  console.log('click 2');
+});
+paletteRadio3.addEventListener('click', () =>{
+  deleteColors();
+  articleRadio.classList.add('palette3');
+  console.log('click 3');
 
-
-
-// option1Input.addEventListener('click', (event)=>{
-//     event.preventDefault;
-//     cardTitle.classList.remove('js-text-color-2');
-//     cardTitle.classList.remove('js-title-color-2');
-//     cardTitle.classList.remove('js-icon-color-2');
-
-
-//     cardTitle.classList.remove('js-text-color-3');
+});
