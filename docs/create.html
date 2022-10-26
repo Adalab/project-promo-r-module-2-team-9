@@ -15,37 +15,37 @@
 </head>
 
 <body>
-    <div class="header"> <img class="header__img" src="./assets/images/logo-awesome-profile-cards.svg"
-            alt="logo awesome">
-    </div>
-    <main>
+    <header class="header-create"> 
+        <img class="header-create__img" src="./assets/images/logo-awesome-profile-cards.svg" alt="logo awesome">
+    </header>
+    <main class="main-create">
         <section class="card-section">
             <div class="reset">
                 <i class="fa-solid fa-trash-can reset__button"></i>
                 <button type="reset" class="reset__button js_reset-btn" title="Reset button">Reset</button>
             </div>
-            <article class="card">
-                <div class="card__text">
-                    <h3 class="card__text_title">Nombre apellido</h3>
-                    <p class="card__text_subtitle">Front-end developer</p>
+            <article class="card js-card">
+                <div class="card__text js-card-border">
+                    <h3 class="card__text_title js-card-name js_preview-name">Nombre apellido</h3>
+                    <p class="card__text_subtitle js_preview-job">Front-end developer</p>
                 </div>
                 <div class="card__image" title="Preview image" alt="Preview image"></div>
                 <ul class="card__social">
                     <li>
-                        <a href="" target="_blank" title="Telephone" alt="Telephone">
-                            <i class="fa-solid fa-mobile-screen"></i></a>
+                        <a class="js_preview-tlf" href="" target="_blank" title="Telephone" alt="Telephone">
+                            <i class="fa-solid fa-mobile-screen js-card-icon"></i></a>
                     </li>
                     <li>
-                        <a href="" target="_blank" title="E-mail" alt="E-mail">
-                            <i class="fa-regular fa-envelope"></i></a>
+                        <a class="js_preview-email" href="" target="_blank" title="E-mail" alt="E-mail">
+                            <i class="fa-regular fa-envelope js-card-icon"></i></a>
                     </li>
                     <li>
-                        <a href="" target="_blank" title="LinkedIn" alt="LinkedIn">
-                            <i class="fa-brands fa-linkedin-in"></i></a>
+                        <a class="js_preview-lin" href="" target="_blank" title="LinkedIn" alt="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in js-card-icon"></i></a>
                     </li>
                     <li>
-                        <a href="" target="_blank" title="Github" alt="Github">
-                            <i class="fa-brands fa-github-alt"></i></a>
+                        <a class="js_preview-git" href="" target="_blank" title="Github" alt="Github">
+                            <i class="fa-brands fa-github-alt js-card-icon"></i></a>
                     </li>
                 </ul>
             </article>
@@ -57,30 +57,30 @@
             <fieldset class="design">
                 <div class="option">
                     <span class="option__span">
-                        <i class="fa-regular fa-object-ungroup"></i>
+                        <i class="fa-regular fa-object-ungroup "></i>
                         <h3 class="option__title">Diseña</h3>
                     </span>
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <i class="arrow fa-solid fa-chevron-down js_arrow-design turn-around "></i>
                 </div>
 
-                <div class="election">
+                <div class="election js_color-election">
                     <legend class="election__title">Colores</legend>
 
                     <span class="election__span">
                         <label class="election__option" for="option">
-                            <input class="election__input" type="radio" id="option" value="colors1"
+                            <input class="election__input js-input-1" type="radio" id="option" value="colors1"
                                 name="colors-options">
                             <img class="election__img" src="./assets/images/palette-color-1.png" alt="Palette-color1">
                         </label>
 
                         <label class="election__option" for="option">
-                            <input class="election__input" type="radio" id="option" value="colors2"
+                            <input class="election__input js-input-2" type="radio" id="option" value="colors2"
                                 name="colors-options">
                             <img class="election__img" src="./assets/images/palette-color-2.png" alt="Palette-color2">
                         </label>
 
                         <label class="election__option" for="option">
-                            <input class="election__input" type="radio" id="option" value="colors3"
+                            <input class="election__input js-input-3" type="radio" id="option" value="colors3"
                                 name="colors-options">
                             <img class="election__img" src="./assets/images/palette-color-3.png" alt="Palette-color3">
                         </label>
@@ -97,20 +97,25 @@
                         <i class="fa-regular fa-keyboard"></i>
                         <h3 class="option__title">Rellena</h3>
                     </span>
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <i class=" arrow fa-solid fa-chevron-down js_arrow-stuffed"></i>
                 </div>
 
-                <div class="stuffed">
-                    <label class="stuffed__label js_input-name" for="firstName">Nombre completo</label>
-                    <input class="stuffed__input" placeholder="Ej: Sally Jill" id="firstName" type="text"
+                <div class="collapsed js_stuffed-data">
+                    <!-- class = stuffed añadir con JS-->
+                    <label class="stuffed__label" for="firstName">Nombre completo</label>
+                    <input class="stuffed__input js_input-name" placeholder="Ej: Sally Jill" id="firstName" type="text"
                         name="firstName" required />
 
                     <label class="stuffed__label" for="job">Puesto</label>
                     <input class="stuffed__input js_input-job" placeholder="Ej: Front-end unicorn" id="job" type="text"
                         name="job" required />
 
+
                     <label class="stuffed__label" for="profileImage">Imagen de perfil</label>
-                    <input type="button" class="add-image" value="Añadir imagen" id="profileImage" title="Add image" />
+                    <div class="stuffed__image">
+                        <input type="button" class="add-image" value="Añadir imagen" id="profileImage" title="Add image" />
+                        <div class="preview-image stuffed__input"></div>
+                    </div>
 
                     <label class=" stuffed__label" for=" emailAddress">Email </label>
                     <input class="stuffed__input js_input-email" placeholder="Ej: sally.hill@gmail.com" type="email"
@@ -121,12 +126,13 @@
                         name="telephone" />
 
                     <label class="stuffed__label" for="linkedin">Linkedin</label>
-                    <input class="stuffed__input js_input-lin" placeholder="Ej: linkedin.com/in/sally-hill"
-                        id="linkedin" type="text" name="linkedin" required />
+                    <input class="stuffed__input js_input-lin" placeholder="Ej: linkedin.com/in/sally-hill" id="linkedin"
+                        type="text" name="linkedin" required />
                     <label class="stuffed__label" for="github">Github</label>
                     <input class="stuffed__input js_input-githup" placeholder="Ej: @sally-hill" id="github" type="text"
                         name="github" required />
                 </div>
+
 
             </fieldset>
 
@@ -139,17 +145,18 @@
                         <i class="fa-solid fa-share-nodes"></i>
                         <h3 class="option__title">Comparte</h3>
                     </span>
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <i class="arrow fa-solid fa-chevron-down js_arrow-share"></i>
                 </div>
-                <div class="share">
+                <div class="collapsed js_share">
+                    <!-- class = share añadir con JS-->
                     <button class="share__button" name="create-card" value="create-card"> <i
                             class="fa-solid fa-address-card share-icon"></i> Crear tarjeta </button>
                 </div>
-                <div class="created">
+                <div class="collapsed js_created">
+                    <!-- class = created añadir con JS-->
                     <h4 class="created__title">La tarjeta ha sido creada:</h4>
                     <a href="#" class="created__link">Link</a>
-                    <a href="#" class="twitter"> <i class="fa-brands fa-twitter twitter-icon"></i> Compartir en
-                        twitter</a>
+                    <a href="#" class="twitter"> <i class="fa-brands fa-twitter twitter-icon"></i> Compartir en twitter</a>
                 </div>
             </fieldset>
 
@@ -161,6 +168,7 @@
         <small class="footer__small">Awesome profile-cards © 2022</small>
         <a href="./index.html"><img class="footer__logo" src="./assets/images/logo-adalab.png" alt="Logo Adalab"></a>
     </footer>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
