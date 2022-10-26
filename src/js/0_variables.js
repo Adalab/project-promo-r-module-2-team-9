@@ -25,4 +25,6 @@ const arrowStuffed = document.querySelector('.js_arrow-stuffed');
 const arrowShare = document.querySelector('.js_arrow-share');
 
 const colorContainer = document.querySelector('.js_color-election');
-const option = document.querySelector('.js_option');
+const dataContainer = document.querySelector('.js_stuffed-data');
+const shareContainer = document.querySelector('.js_share');
+const shareCreated = document.querySelector('.js_created');
