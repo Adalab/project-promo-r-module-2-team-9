@@ -3,33 +3,55 @@
 /* eslint-disable no-undef */
 /* eslint-disable strict */
 
-console.log('data');
+// console.log('data');
 
-nameInput.addEventListener('input', () => {
-    const name = nameInput.value;
+let name = '';
+let job = '';
+let email = '';
+let tlf = '';
 
+// const name = nameInput.value;
+// const job = jobInput.value;
+// const email = emailInput.value;
+// const tlf = tlfInput.value;
+
+function updatePreview() {
     if (name === '') {
         previewName.innerHTML = 'Nombre Apellidos';
-    }
-    else {
+    }else {
         previewName.innerHTML = name;
     }
+    if (job === '') {
+        previewJob.innerHTML = 'Front-end developer';
+    }else {
+        previewJob.innerHTML = job;
+    }
+    if (email === '') {
+        previewEmail.href = '';
+    } else {
+        previewEmail.href = `mailto: ${email}`;
+    }
+    if (tlf === '') {
+        previewTlf.href = '';
+    } else {
+        previewTlf.href = `${tlf}`;
+    }
+}
+
+nameInput.addEventListener('input', () => {
+    updatePreview();
 });
 
 jobInput.addEventListener('input', () => {
-    const job = jobInput.value;
-
-    if (job === '') {
-        previewJob.innerHTML = 'Front-end developer';
-    }
-    else {
-        previewJob.innerHTML = job;
-    }
+    updatePreview();
 });
 
 emailInput.addEventListener('input', () => {
-    const email = emailInput.value;
-
-    previewEmail.href.innerHTML = `mailto: ${email}`;
+    updatePreview();
 });
+
+tlfInput.addEventListener('input', () => {
+    updatePreview();
+});
+
 
