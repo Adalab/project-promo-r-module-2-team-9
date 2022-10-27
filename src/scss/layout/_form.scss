@@ -14,6 +14,7 @@
   }
 }
 
+//clases para la función de arrow
 .arrow {
   cursor: pointer;
 }
@@ -114,10 +115,10 @@
     border: solid 1px $hospital-green;
     margin-bottom: 20px;
     height: 30px;
+    padding-left: 10px;
 
     &::placeholder {
       opacity: 0.5;
-      padding-left: 10px;
     }
   }
 
