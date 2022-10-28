@@ -2,6 +2,8 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-console */
 
+articleRadio.classList.add('palette1');
+
 function deleteColors (){
   articleRadio.classList.remove('palette1');
   articleRadio.classList.remove('palette2');
