@@ -3,19 +3,12 @@
 /* eslint-disable no-undef */
 /* eslint-disable strict */
 
-// console.log('data');
-
-let name = '';
-let job = '';
-let email = '';
-let tlf = '';
-
-// const name = nameInput.value;
-// const job = jobInput.value;
-// const email = emailInput.value;
-// const tlf = tlfInput.value;
-
 function updatePreview() {
+    const name = nameInput.value;
+    const job = jobInput.value;
+    const email = emailInput.value;
+    const tlf = tlfInput.value;
+
     if (name === '') {
         previewName.innerHTML = 'Nombre Apellidos';
     }else {
@@ -29,18 +22,16 @@ function updatePreview() {
     if (email === '') {
         previewEmail.href = '';
     } else {
-        previewEmail.href = `mailto: ${email}`;
+        previewEmail.href = `mailto:${email}`;
     }
     if (tlf === '') {
         previewTlf.href = '';
     } else {
-        previewTlf.href = `${tlf}`;
+        previewTlf.href = `tel:${tlf}`;
     }
 }
 
-nameInput.addEventListener('input', () => {
-    updatePreview();
-});
+nameInput.addEventListener('input', updatePreview);
 
 jobInput.addEventListener('input', () => {
     updatePreview();
