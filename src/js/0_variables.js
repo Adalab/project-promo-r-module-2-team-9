@@ -2,8 +2,6 @@
 'use strict';
 
 // eslint-disable-next-line no-console
-console.log('variables');
-
 const resetBtn = document.querySelector('.js_reset-btn');
 const nameInput = document.querySelector('.js_input-name');
 const jobInput = document.querySelector('.js_input-job');
