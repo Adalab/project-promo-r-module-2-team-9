@@ -8,15 +8,17 @@ function updatePreview() {
     const job = jobInput.value;
     const email = emailInput.value;
     const tlf = tlfInput.value;
+    const gitHub = githupInput.value;
+    const linkedin = linInput.value;
 
     if (name === '') {
         previewName.innerHTML = 'Nombre Apellidos';
-    }else {
+    } else {
         previewName.innerHTML = name;
     }
     if (job === '') {
         previewJob.innerHTML = 'Front-end developer';
-    }else {
+    } else {
         previewJob.innerHTML = job;
     }
     if (email === '') {
@@ -29,20 +31,22 @@ function updatePreview() {
     } else {
         previewTlf.href = `tel:${tlf}`;
     }
+    if (gitHub === '') {
+        previewGit.href = '';
+    } else {
+        previewGit.href = `${gitHub}`;
+    }
+    if (linkedin === '') {
+        previewLin.href = '';
+    } else {
+        previewLin.href = `${linkedin}`;
+    }
 }
 
 nameInput.addEventListener('input', updatePreview);
-
-jobInput.addEventListener('input', () => {
-    updatePreview();
-});
-
-emailInput.addEventListener('input', () => {
-    updatePreview();
-});
-
-tlfInput.addEventListener('input', () => {
-    updatePreview();
-});
-
+jobInput.addEventListener('input', updatePreview);
+tlfInput.addEventListener('input', updatePreview);
+emailInput.addEventListener('input', updatePreview);
+linInput.addEventListener('input', updatePreview);
+githupInput.addEventListener('input', updatePreview);
 
