@@ -18,11 +18,11 @@
   margin-bottom: 20px;
   padding: 1px 10px;
   background-color: transparent;
-  cursor: pointer;
   position: relative;
   right: 80px;
 
   &__button {
+    font-family: $font-sans;
     background-color: transparent;
     border-color: transparent;
     text-transform: uppercase;
@@ -33,6 +33,10 @@
 
     &:hover {
       color: $white;
+    }
+
+    .fa-trash-can {
+      padding-right: 8px;
     }
   }
 }
@@ -110,6 +114,10 @@
   .js-card-icon {
     color: $dark-gree-blue;
     border: solid 2px $hospital-green;
+
+    &:hover {
+      color: $hospital-green;
+    }
   }
 }
 .palette2 {

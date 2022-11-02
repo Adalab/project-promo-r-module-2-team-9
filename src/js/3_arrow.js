@@ -55,14 +55,11 @@ function handleClickArrowStuffed() {
 function arrowUpShare() {
   arrowShare.classList.add('turn-around');
   shareContainer.classList.add('share');
-  shareCreated.classList.add('created');
 }
 function arrowDownShare() {
   arrowShare.classList.remove('turn-around');
   shareContainer.classList.remove('share');
-  shareCreated.classList.remove('created');
   shareContainer.classList.add('collapsed');
-  shareCreated.classList.add('collapsed');
 }
 
 function handleClickArrowShare() {
@@ -77,8 +74,8 @@ function handleClickArrowShare() {
 
 //Creamos los eventos para los clicks de las flechas
 
-arrowDesign.addEventListener('click', handleClickArrowDesign);
+designBar.addEventListener('click', handleClickArrowDesign);
 
-arrowStuffed.addEventListener('click', handleClickArrowStuffed);
+stuffedBar.addEventListener('click', handleClickArrowStuffed);
 
-arrowShare.addEventListener('click', handleClickArrowShare);
+shareBar.addEventListener('click', handleClickArrowShare);

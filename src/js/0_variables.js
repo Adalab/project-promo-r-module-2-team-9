@@ -22,6 +22,9 @@ const previewLin = document.querySelector('.js_preview-lin');
 const previewGit = document.querySelector('.js_preview-git');
 
 //variables arrow
+const designBar = document.querySelector('.js_design_bar');
+const stuffedBar = document.querySelector('.js_stuffed_bar');
+const shareBar = document.querySelector('.js_share_bar');
 
 const arrowDesign = document.querySelector('.js_arrow-design');
 const arrowStuffed = document.querySelector('.js_arrow-stuffed');
@@ -30,7 +33,6 @@ const arrowShare = document.querySelector('.js_arrow-share');
 const colorContainer = document.querySelector('.js_color-election');
 const dataContainer = document.querySelector('.js_stuffed-data');
 const shareContainer = document.querySelector('.js_share');
-const shareCreated = document.querySelector('.js_created');
 
 //variables colors
 
@@ -38,3 +40,6 @@ const paletteRadio1 = document.querySelector('.js-input-1');
 const paletteRadio2 = document.querySelector('.js-input-2');
 const paletteRadio3 = document.querySelector('.js-input-3');
 const articleRadio = document.querySelector('.js-card');
+
+//variables created
+const shareCreated = document.querySelector('.js_created');
