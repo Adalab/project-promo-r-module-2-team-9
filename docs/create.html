@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/card.png">
     <title>Create your Awesome Profile-Card</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +30,7 @@
                     <h3 class="card__text_title js-card-name js_preview-name">Nombre apellido</h3>
                     <p class="card__text_subtitle js_preview-job">Front-end developer</p>
                 </div>
-                <div class="card__image" title="Preview image" alt="Preview image"></div>
+                <div class="card__image js_card_img" title="Preview image" alt="Preview image"></div>
                 <ul class="card__social">
                     <li>
                         <a class="js_preview-tlf" href="" target="_blank" title="Telephone" alt="Telephone">
@@ -69,7 +70,7 @@
                     <span class="election__span">
                         <label class="election__option" for="option">
                             <input class="election__input js-input-1" type="radio" id="option" value="colors1"
-                                name="colors-options">
+                                name="colors-options" checked>
                             <img class="election__img" src="./assets/images/palette-color-1.png" alt="Palette-color1">
                         </label>
 
@@ -113,8 +114,8 @@
 
                     <label class="stuffed__label" for="profileImage">Imagen de perfil</label>
                     <div class="stuffed__image">
-                        <input type="button" class="add-image" value="Añadir imagen" id="profileImage" title="Add image" />
-                        <div class="preview-image stuffed__input"></div>
+                        <input type="button" class="add-image js_input_img" value="Añadir imagen" id="profileImage" title="Add image" />
+                        <div class="preview-image stuffed__input js_form_img"></div>
                     </div>
 
                     <label class=" stuffed__label" for=" emailAddress">Email </label>

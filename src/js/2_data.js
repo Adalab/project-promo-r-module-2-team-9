@@ -3,55 +3,50 @@
 /* eslint-disable no-undef */
 /* eslint-disable strict */
 
-// console.log('data');
-
-let name = '';
-let job = '';
-let email = '';
-let tlf = '';
-
-// const name = nameInput.value;
-// const job = jobInput.value;
-// const email = emailInput.value;
-// const tlf = tlfInput.value;
-
 function updatePreview() {
+    const name = nameInput.value;
+    const job = jobInput.value;
+    const email = emailInput.value;
+    const tlf = tlfInput.value;
+    const gitHub = githupInput.value;
+    const linkedin = linInput.value;
+
     if (name === '') {
         previewName.innerHTML = 'Nombre Apellidos';
-    }else {
+    } else {
         previewName.innerHTML = name;
     }
     if (job === '') {
         previewJob.innerHTML = 'Front-end developer';
-    }else {
+    } else {
         previewJob.innerHTML = job;
     }
     if (email === '') {
         previewEmail.href = '';
     } else {
-        previewEmail.href = `mailto: ${email}`;
+        previewEmail.href = `mailto:${email}`;
     }
     if (tlf === '') {
         previewTlf.href = '';
     } else {
-        previewTlf.href = `${tlf}`;
+        previewTlf.href = `tel:${tlf}`;
+    }
+    if (gitHub === '') {
+        previewGit.href = '';
+    } else {
+        previewGit.href = `${gitHub}`;
+    }
+    if (linkedin === '') {
+        previewLin.href = '';
+    } else {
+        previewLin.href = `${linkedin}`;
     }
 }
 
-nameInput.addEventListener('input', () => {
-    updatePreview();
-});
-
-jobInput.addEventListener('input', () => {
-    updatePreview();
-});
-
-emailInput.addEventListener('input', () => {
-    updatePreview();
-});
-
-tlfInput.addEventListener('input', () => {
-    updatePreview();
-});
-
+nameInput.addEventListener('input', updatePreview);
+jobInput.addEventListener('input', updatePreview);
+tlfInput.addEventListener('input', updatePreview);
+emailInput.addEventListener('input', updatePreview);
+linInput.addEventListener('input', updatePreview);
+githupInput.addEventListener('input', updatePreview);
 

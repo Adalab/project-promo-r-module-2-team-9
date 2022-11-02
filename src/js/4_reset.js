@@ -1,7 +1,6 @@
 /* eslint-disable indent */
 /* eslint-disable no-undef */
 /* eslint-disable strict */
-console.log('reset');
 
 resetBtn.addEventListener('click', (event) => {
   event.preventDefault();
