@@ -9,12 +9,7 @@ resetBtn.addEventListener('click', (event) => {
   tlfInput.value = '';
   linInput.value = '';
   githupInput.value = '';
-  if (nameInput.value === '') {
-    previewName.innerHTML = 'Nombre Apellidos';
-  }
-  if (jobInput.value === '') {
-    previewJob.innerHTML = 'Front-end developer';
-  }
+  updatePreview();
 });
 
 //    // primero le digo que si le doy a reset me ponga todas las casillas vacias

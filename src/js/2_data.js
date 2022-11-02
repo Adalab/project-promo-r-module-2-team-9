@@ -3,43 +3,52 @@
 /* eslint-disable no-undef */
 /* eslint-disable strict */
 
-function updatePreview() {
-    const name = nameInput.value;
-    const job = jobInput.value;
-    const email = emailInput.value;
-    const tlf = tlfInput.value;
-    const gitHub = githupInput.value;
-    const linkedin = linInput.value;
+const dataCard = {
+    name: '',
+    job: '',
+    email: '',
+    tlf: '',
+    gitHub: '',
+    linkedin: '',
+};
 
-    if (name === '') {
+function updatePreview() {
+    dataCard.name = nameInput.value;
+    dataCard.job = jobInput.value;
+    dataCard.email = emailInput.value;
+    dataCard.tlf = tlfInput.value;
+    dataCard.gitHub = githupInput.value;
+    dataCard.linkedin = linInput.value;
+
+    if (dataCard.name === '') {
         previewName.innerHTML = 'Nombre Apellidos';
     } else {
-        previewName.innerHTML = name;
+        previewName.innerHTML = dataCard.name;
     }
-    if (job === '') {
+    if (dataCard.job === '') {
         previewJob.innerHTML = 'Front-end developer';
     } else {
-        previewJob.innerHTML = job;
+        previewJob.innerHTML = dataCard.job;
     }
-    if (email === '') {
+    if (dataCard.email === '') {
         previewEmail.href = '';
     } else {
-        previewEmail.href = `mailto:${email}`;
+        previewEmail.href = `mailto:${dataCard.email}`;
     }
-    if (tlf === '') {
+    if (dataCard.tlf === '') {
         previewTlf.href = '';
     } else {
-        previewTlf.href = `tel:${tlf}`;
+        previewTlf.href = `tel:${dataCard.tlf}`;
     }
-    if (gitHub === '') {
+    if (dataCard.gitHub === '') {
         previewGit.href = '';
     } else {
-        previewGit.href = `${gitHub}`;
+        previewGit.href = `https://github.com/${dataCard.gitHub}`;
     }
-    if (linkedin === '') {
+    if (dataCard.linkedin === '') {
         previewLin.href = '';
     } else {
-        previewLin.href = `${linkedin}`;
+        previewLin.href = `${dataCard.linkedin}`;
     }
 }
 
