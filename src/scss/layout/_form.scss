@@ -95,13 +95,14 @@
 }
 
 //------------------------RELLENA------------------------------------//
+.fieldset_stuffed{
+  border-bottom: solid $white-two 1.5px;
+}
 
 .stuffed {
   display: flex;
   flex-direction: column;
-  // margin-bottom: 10px;
-  border-bottom: solid $white-two 1.5px;
-
+  
   &__label {
     color: $dark-gree-blue;
     font-size: 14px;
@@ -152,11 +153,14 @@
 }
 
 //------------------------COMPARTE------------------------------------//
+
+.fieldset_share{
+  border-bottom: solid $white-two 1.5px;
+}
 .share {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: solid $white-two 1.5px;
   &__button {
     margin: 30px 0px 30px 0px;
     background-color: $dull-orange;
@@ -185,7 +189,6 @@
 }
 
 .created {
-  //border-bottom: solid $white-two 1.5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
