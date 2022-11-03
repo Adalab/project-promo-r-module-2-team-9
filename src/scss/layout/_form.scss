@@ -99,7 +99,7 @@
 .stuffed {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
   border-bottom: solid $white-two 1.5px;
 
   &__label {
@@ -164,7 +164,9 @@
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
     border: none;
   }
+  
 }
+
 .share-icon {
   color: $dull-orange;
   background-color: white;
@@ -176,7 +178,7 @@
 }
 
 .created {
-  border-bottom: solid $white-two 1.5px;
+  //border-bottom: solid $white-two 1.5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
