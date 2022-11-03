@@ -1,9 +1,20 @@
 /* eslint-disable indent */
 /* eslint-disable no-undef */
 /* eslint-disable strict */
+function check() {
+  paletteRadio1.checked = true;
+}
 
-resetBtn.addEventListener('click', (event) => {
-  event.preventDefault();
+function resetPaleta () {
+  articleRadio.classList.remove('palette1');
+  articleRadio.classList.remove('palette2');
+  articleRadio.classList.remove('palette3');
+  articleRadio.classList.add('palette1');
+  check ();
+//  let paletteRadio1 = paletteRadio1.value;
+}
+
+function resetInput () {
   nameInput.value = '';
   jobInput.value = '';
   emailInput.value = '';
@@ -11,7 +22,17 @@ resetBtn.addEventListener('click', (event) => {
   linInput.value = '';
   githupInput.value = '';
   updatePreview();
-});
-// inlove
-//    // primero le digo que si le doy a reset me ponga todas las casillas vacias
-//    y luego que si name esta vacio que me escriba nombre apellidos y lo mismo con job
+}
+
+
+function handleclikreset (event) {
+  event.preventDefault();
+  resetInput ();
+  updatePreview();
+  resetPaleta ();
+}
+
+
+
+resetBtn.addEventListener('click', handleclikreset);
+

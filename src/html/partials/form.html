@@ -61,9 +61,10 @@
 
             <label class="stuffed__label" for="profileImage">Imagen de perfil</label>
             <div class="stuffed__image">
-                <input type="file" class="add-image js_input_img" value="Añadir imagen" id="profileImage"
+                <label for="profileImage" class="add-image">Añadir imagen</label>
+                <input type="file" class="js_input_img hidden js__profile-upload-btn" id="profileImage"
                     title="Add image" />
-                <div class="preview-image stuffed__input js_form_img"></div>
+                <div class="preview-image stuffed__input js_form_img js__profile-preview"></div>
             </div>
 
             <label class=" stuffed__label" for=" emailAddress">Email </label>
