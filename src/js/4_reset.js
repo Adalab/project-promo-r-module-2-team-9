@@ -12,6 +12,6 @@ resetBtn.addEventListener('click', (event) => {
   githupInput.value = '';
   updatePreview();
 });
-
+// inlove
 //    // primero le digo que si le doy a reset me ponga todas las casillas vacias
 //    y luego que si name esta vacio que me escriba nombre apellidos y lo mismo con job
