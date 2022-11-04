@@ -35,7 +35,6 @@ const dataContainer = document.querySelector('.js_stuffed-data');
 const shareContainer = document.querySelector('.js_share');
 
 //variables colors
-
 const paletteRadio1 = document.querySelector('.js-input-1');
 const paletteRadio2 = document.querySelector('.js-input-2');
 const paletteRadio3 = document.querySelector('.js-input-3');
