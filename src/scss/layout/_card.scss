@@ -114,7 +114,6 @@
   .js-card-icon {
     color: $dark-gree-blue;
     border: solid 2px $hospital-green;
-
     &:hover {
       color: $hospital-green;
     }
@@ -130,6 +129,9 @@
   .js-card-icon {
     color: $dried-blood;
     border: solid 2px $tomato;
+    &:hover {
+      color: $tomato;
+    }
   }
 }
 .palette3 {
@@ -142,5 +144,8 @@
   .js-card-icon {
     color: $slate;
     border: solid 2px $light-grey-blue;
+    &:hover {
+      color: $light-grey-blue;
+    }
   }
 }
