@@ -42,3 +42,5 @@ const articleRadio = document.querySelector('.js-card');
 
 //variables created
 const shareCreated = document.querySelector('.js_created');
+const btnCreateCard = document.querySelector('.js-btn-create');
+const iconBtnCreated = document.querySelector('.js-icon-btn');

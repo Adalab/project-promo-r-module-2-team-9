@@ -6,6 +6,7 @@
 const dataCard = {
     name: '',
     job: '',
+    photo: '',
     email: '',
     tlf: '',
     gitHub: '',
