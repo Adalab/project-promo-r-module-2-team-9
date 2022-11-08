@@ -20,6 +20,7 @@ const miniPreviewImg = document.querySelector('.js_form_img');
 const previewEmail = document.querySelector('.js_preview-email');
 const previewLin = document.querySelector('.js_preview-lin');
 const previewGit = document.querySelector('.js_preview-git');
+const inputsToReset = document.querySelectorAll('.js-input');
 
 //variables arrow
 const designBar = document.querySelector('.js_design_bar');
