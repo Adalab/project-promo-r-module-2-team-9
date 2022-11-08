@@ -95,14 +95,14 @@
 }
 
 //------------------------RELLENA------------------------------------//
-.fieldset_stuffed{
+.fieldset_stuffed {
   border-bottom: solid $white-two 1.5px;
 }
 
 .stuffed {
   display: flex;
   flex-direction: column;
-  
+
   &__label {
     color: $dark-gree-blue;
     font-size: 14px;
@@ -145,6 +145,7 @@
   width: 30px;
   height: 30px;
   margin-left: 20px;
+  background-size: cover;
 }
 
 //imagen usuario añadir
@@ -154,7 +155,7 @@
 
 //------------------------COMPARTE------------------------------------//
 
-.fieldset_share{
+.fieldset_share {
   border-bottom: solid $white-two 1.5px;
 }
 .share {
@@ -175,7 +176,6 @@
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
     border: none;
   }
-  
 }
 
 .share-icon {
@@ -231,9 +231,9 @@
 
 //------Clases para la función showCreated
 
-.change-color-btn{
-    background-color: $grey-checked;
+.change-color-btn {
+  background-color: $grey-checked;
 }
-.change-color-icon{
-    color: $grey-checked;
+.change-color-icon {
+  color: $grey-checked;
 }
