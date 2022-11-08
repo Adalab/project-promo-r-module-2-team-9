@@ -113,18 +113,6 @@ function handleClickArrowShare() {
   }
 }
 
-//--------- Desplegable link tarjeta
-
-// Se añaden las características CSS a los elementos llamados para cambiar la apariencia del botón y desplegar la secciín link de twitter.
-
-function showCreated() {
-  btnCreateCard.classList.add('change-color-btn');
-  iconBtnCreated.classList.add('change-color-icon');
-  shareCreated.classList.remove('collapsed');
-  shareCreated.classList.add('created');
-}
-
-
 //----------------EVENTOS
 
 //Creamos los eventos para los clicks de las flechas
@@ -134,7 +122,3 @@ designBar.addEventListener('click', handleClickArrowDesign);
 stuffedBar.addEventListener('click', handleClickArrowStuffed);
 
 shareBar.addEventListener('click', handleClickArrowShare);
-
-//Evento para mostar la sección link twitter
-
-btnCreateCard.addEventListener('click', showCreated);
