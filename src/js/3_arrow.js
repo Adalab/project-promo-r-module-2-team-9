@@ -101,6 +101,8 @@ function arrowDownShare() {
   arrowShare.classList.remove('turn-around');
   shareContainer.classList.remove('share');
   shareContainer.classList.add('collapsed');
+  shareCreated.classList.add('collapsed');
+  shareCreated.classList.remove('created');
 }
 
 function handleClickArrowShare() {
