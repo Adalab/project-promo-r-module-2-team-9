@@ -21,6 +21,16 @@ const previewEmail = document.querySelector('.js_preview-email');
 const previewLin = document.querySelector('.js_preview-lin');
 const previewGit = document.querySelector('.js_preview-git');
 
+//Variables data
+const dataCard = {
+  name: '',
+  job: '',
+  email: '',
+  tlf: '',
+  gitHub: '',
+  linkedin: '',
+};
+
 //variables arrow
 const designBar = document.querySelector('.js_design_bar');
 const stuffedBar = document.querySelector('.js_stuffed_bar');

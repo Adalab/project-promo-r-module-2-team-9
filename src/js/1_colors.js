@@ -2,23 +2,20 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-console */
 
-articleRadio.classList.add('palette1');
-
-function deleteColors (){
+//FUNCION MANEJADORA
+function showPalette(event) {
   articleRadio.classList.remove('palette1');
   articleRadio.classList.remove('palette2');
   articleRadio.classList.remove('palette3');
+  articleRadio.classList.add('palette' + event.currentTarget.value);
+  dataCard.palette = event.currentTarget.value;
 }
 
-paletteRadio1.addEventListener('click', (event) =>{
-  deleteColors();
-  articleRadio.classList.add(event.currentTarget.value);
-});
-paletteRadio2.addEventListener('click', (event) =>{
-  deleteColors();
-  articleRadio.classList.add(event.currentTarget.value);
-});
-paletteRadio3.addEventListener('click', (event) =>{
-  deleteColors();
-  articleRadio.classList.add(event.currentTarget.value);
-});
+//EVENTOS
+paletteRadio1.addEventListener('click', showPalette);
+paletteRadio2.addEventListener('click', showPalette);
+paletteRadio3.addEventListener('click', showPalette);
+
+//EJECUTAR AL CARGAR LA PÁGINA
+
+articleRadio.classList.add('palette1');
