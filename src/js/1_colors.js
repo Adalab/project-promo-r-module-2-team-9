@@ -10,19 +10,15 @@ function deleteColors (){
   articleRadio.classList.remove('palette3');
 }
 
-paletteRadio1.addEventListener('click', () =>{
-  console.log('click 1');
+paletteRadio1.addEventListener('click', (event) =>{
   deleteColors();
-  articleRadio.classList.add('palette1');
+  articleRadio.classList.add(event.currentTarget.value);
 });
-paletteRadio2.addEventListener('click', () =>{
+paletteRadio2.addEventListener('click', (event) =>{
   deleteColors();
-  articleRadio.classList.add('palette2');
-  console.log('click 2');
+  articleRadio.classList.add(event.currentTarget.value);
 });
-paletteRadio3.addEventListener('click', () =>{
+paletteRadio3.addEventListener('click', (event) =>{
   deleteColors();
-  articleRadio.classList.add('palette3');
-  console.log('click 3');
-
+  articleRadio.classList.add(event.currentTarget.value);
 });

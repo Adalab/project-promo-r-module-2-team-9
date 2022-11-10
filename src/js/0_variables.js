@@ -20,6 +20,7 @@ const miniPreviewImg = document.querySelector('.js_form_img');
 const previewEmail = document.querySelector('.js_preview-email');
 const previewLin = document.querySelector('.js_preview-lin');
 const previewGit = document.querySelector('.js_preview-git');
+const inputsToReset = document.querySelectorAll('.js-input');
 
 //variables arrow
 const designBar = document.querySelector('.js_design_bar');
@@ -35,7 +36,6 @@ const dataContainer = document.querySelector('.js_stuffed-data');
 const shareContainer = document.querySelector('.js_share');
 
 //variables colors
-
 const paletteRadio1 = document.querySelector('.js-input-1');
 const paletteRadio2 = document.querySelector('.js-input-2');
 const paletteRadio3 = document.querySelector('.js-input-3');
@@ -43,3 +43,5 @@ const articleRadio = document.querySelector('.js-card');
 
 //variables created
 const shareCreated = document.querySelector('.js_created');
+const btnCreateCard = document.querySelector('.js-btn-create');
+const iconBtnCreated = document.querySelector('.js-icon-btn');

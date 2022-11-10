@@ -95,12 +95,13 @@
 }
 
 //------------------------RELLENA------------------------------------//
+.fieldset_stuffed {
+  border-bottom: solid $white-two 1.5px;
+}
 
 .stuffed {
   display: flex;
   flex-direction: column;
-  // margin-bottom: 10px;
-  border-bottom: solid $white-two 1.5px;
 
   &__label {
     color: $dark-gree-blue;
@@ -144,19 +145,23 @@
   width: 30px;
   height: 30px;
   margin-left: 20px;
+  background-size: cover;
 }
 
 //imagen usuario añadir
-.hidden{
+.hidden {
   display: none;
 }
 
 //------------------------COMPARTE------------------------------------//
+
+.fieldset_share {
+  border-bottom: solid $white-two 1.5px;
+}
 .share {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: solid $white-two 1.5px;
   &__button {
     margin: 30px 0px 30px 0px;
     background-color: $dull-orange;
@@ -170,8 +175,8 @@
     border-radius: 12px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
     border: none;
+    cursor: pointer;
   }
-  
 }
 
 .share-icon {
@@ -185,7 +190,6 @@
 }
 
 .created {
-  //border-bottom: solid $white-two 1.5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -224,4 +228,13 @@
     font-size: 18px;
     margin-right: 9.5px;
   }
+}
+
+//------Clases para la función showCreated
+
+.change-color-btn {
+  background-color: $grey-checked;
+}
+.change-color-icon {
+  color: $grey-checked;
 }

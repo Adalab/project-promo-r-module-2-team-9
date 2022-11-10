@@ -59,11 +59,13 @@
       font-weight: 700;
       font-size: 18px;
       text-transform: capitalize;
+      width: 19ch;
       // color: $dark-gree-blue;
     }
 
     &_subtitle {
       font-size: 16px;
+      width: 23ch;
     }
   }
 
@@ -72,6 +74,7 @@
     width: 240px;
     height: 200px;
     margin: 10px 0;
+    background-size: cover;
   }
 
   &__social {
@@ -114,7 +117,6 @@
   .js-card-icon {
     color: $dark-gree-blue;
     border: solid 2px $hospital-green;
-
     &:hover {
       color: $hospital-green;
     }
@@ -130,6 +132,9 @@
   .js-card-icon {
     color: $dried-blood;
     border: solid 2px $tomato;
+    &:hover {
+      color: $tomato;
+    }
   }
 }
 .palette3 {
@@ -142,5 +147,8 @@
   .js-card-icon {
     color: $slate;
     border: solid 2px $light-grey-blue;
+    &:hover {
+      color: $light-grey-blue;
+    }
   }
 }
