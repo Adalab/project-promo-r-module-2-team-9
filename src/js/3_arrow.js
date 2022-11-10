@@ -117,7 +117,8 @@ function handleClickArrowShare() {
 
 // Se añaden las características CSS a los elementos llamados para cambiar la apariencia del botón y desplegar la secciín link de twitter.
 
-function showCreated() {
+function showCreated(event) {
+  event.preventDefault();
   btnCreateCard.classList.add('change-color-btn');
   iconBtnCreated.classList.add('change-color-icon');
   shareCreated.classList.remove('collapsed');
