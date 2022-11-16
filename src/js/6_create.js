@@ -4,9 +4,11 @@
 
 function handleCreated(event) {
   event.preventDefault();
+  showData()
   showCreated();
   saveInfo();
 }
+
 
 function saveInfo() {
   fetch('https://awesome-profile-cards.herokuapp.com/card', {
@@ -25,6 +27,15 @@ function saveInfo() {
       twitter.href = `https://twitter.com/intent/tweet?text=Aquí%20podéis%20ver%20mi%20tarjeta%20virtual&url=${data}`;
       localStorage.setItem('userData', JSON.stringify(dataCard));
     });
+}
+
+// Mostramos los datos guardados del localStorage al cargar la página
+function showData() {
+  const saveDataCard = JSON.parse(localStorage.getItem('userData'));
+  if (saveDataCard !== null){ 
+    saveDataCard = dataCard;
+    updatePreview();
+  }
 }
 
 // Se añaden las características CSS a los elementos llamados para cambiar la apariencia del botón y desplegar la secciín link de twitter.
