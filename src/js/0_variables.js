@@ -45,3 +45,6 @@ const articleRadio = document.querySelector('.js-card');
 const shareCreated = document.querySelector('.js_created');
 const btnCreateCard = document.querySelector('.js-btn-create');
 const iconBtnCreated = document.querySelector('.js-icon-btn');
+
+const link = document.querySelector('.js_link');
+const twitter = document.querySelector('.js_twitter');
