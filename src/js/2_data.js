@@ -8,7 +8,7 @@ const dataCard = {
   job: '',
   photo: '',
   email: '',
-  tlf: '',
+  phone: '',
   github: '',
   linkedin: '',
 };
@@ -17,7 +17,7 @@ function updatePreview() {
   dataCard.name = nameInput.value;
   dataCard.job = jobInput.value;
   dataCard.email = emailInput.value;
-  dataCard.tlf = tlfInput.value;
+  dataCard.phone = tlfInput.value;
   dataCard.github = githupInput.value;
   dataCard.linkedin = linInput.value;
 
@@ -36,10 +36,10 @@ function updatePreview() {
   } else {
     previewEmail.href = `mailto:${dataCard.email}`;
   }
-  if (dataCard.tlf === '') {
+  if (dataCard.phone === '') {
     previewTlf.href = '';
   } else {
-    previewTlf.href = `tel:${dataCard.tlf}`;
+    previewTlf.href = `tel:${dataCard.phone}`;
   }
   if (dataCard.github === '') {
     previewGit.href = '';
