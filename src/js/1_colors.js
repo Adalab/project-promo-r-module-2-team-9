@@ -6,8 +6,18 @@ function showPalette() {
   articleRadio.classList.remove('palette1');
   articleRadio.classList.remove('palette2');
   articleRadio.classList.remove('palette3');
+  // cardsRadio.classList.remove('palette1');
+  // cardsRadio.classList.remove('palette2');
+  // cardsRadio.classList.remove('palette3');
+  // previewImg.classList.remove('card__image');
+  // previewImg.classList.remove('palette1');
+  // previewImg.classList.remove('palette2');
+  // previewImg.classList.remove('palette3');
   articleRadio.classList.add('palette' + event.currentTarget.value);
   dataCard.palette = event.currentTarget.value;
+  cardsRadio.classList.add('palette' + event.currentTarget.value);
+  dataCard.palette = event.currentTarget.value;
+  
 }
 
 paletteRadio1.addEventListener('click', showPalette);

@@ -108,6 +108,15 @@
 //SECCIÓN JAVASCRIPT COLORES:
 
 .palette1 {
+  background-color: #88d8c0;
+  // background-image: url(https://img.freepik.com/vector-gratis/paisaje-juego-plantas-tropicales_105738-749.jpg?w=1380&t=st=1668691098~exp=1668691698~hmac=54c51d3821d6447ae15e99e0880c32e2329e219292d2e5f06c40a3d0744281af);
+  .js_card_img {
+    width: 240px;
+    height: 200px;
+    margin: 10px 0;
+    background-size: cover;
+    background-color: black;
+  }
   .js-card-border {
     border-left: solid 5px $dirty-blue;
   }
@@ -122,7 +131,15 @@
     }
   }
 }
+
 .palette2 {
+  .js_card_img {
+    width: 240px;
+    height: 200px;
+    margin: 10px 0;
+    background-size: cover;
+    background-color: black;
+  }
   .js-card-border {
     border-left: solid 5px $rusty-red;
   }
@@ -138,6 +155,13 @@
   }
 }
 .palette3 {
+  .js_card_img {
+    width: 240px;
+    height: 200px;
+    margin: 10px 0;
+    background-size: cover;
+    background-color: black;
+  }
   .js-card-border {
     border-left: solid 5px $faded-orange;
   }
