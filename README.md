@@ -2,10 +2,10 @@
 
 ## Autoras
 
-- Bella García - @bellita85
-- Lara R. Poblet - @lrpoblet
-- María Somoza Jurado - @MariaSJ
-- Nayra Romero Salas - @nayraromero
+- Bella García - [@bellita85](https://github.com/bellita85)
+- Lara R. Poblet - [@lrpoblet](https://github.com/lrpoblet)
+- María Somoza Jurado - [@MariaSJ](https://github.com/MariaSJ)
+- Nayra Romero Salas - [@nayraromero](https://github.com/nayraromero)
 
 ## Resumen
 
@@ -38,6 +38,9 @@ En el desarrollo de esta aplicación web se han usado las siguientes tecnología
 
 ## Adalab Starter Kit
 
+> NOTA: Necesitas tener instalado **Node JS** para trabajar con este Starter Kit e instalar las dependencias locales ejecutando en la terminal el comando:
+> `npm install`
+
 Para el proyecto se ha usado el Starter Kit de Adalab, creado en **node** y **gulp**.
 
 Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. Se ha usado para trabajar más cómodamente y automatizar tareas.
@@ -45,10 +48,8 @@ Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servido
 En el Kit hay 3 tipos de ficheros y carpetas:
 
 - Los ficheros que están sueltos en la raíz del repositorio, como gulpfile.js, package.json... Son la configuración del proyecto y no se necesita modificarlos.
-  La carpeta src/: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- Las carpetas public/ y docs/, que son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de src/, los procesa y los genera dentro de public/ y docs/.
-  > NOTA: Necesitas tener instalado **Node JS** para trabajar con este Starter Kit e instalar las dependencias locales ejecutando en la terminal el comando:
-  > npm install
+  La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
+- Las carpetas `public/` y `docs/`, que son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de src/, los procesa y los genera dentro de public/ y docs/.
 
 ## API del back-end
 
