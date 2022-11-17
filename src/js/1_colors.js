@@ -9,6 +9,7 @@ function showPalette() {
   articleRadio.classList.add('palette' + event.currentTarget.value);
   dataCard.palette = event.currentTarget.value;
   
+  mainRadio.classList.remove('palette1');
   mainRadio.classList.remove('palette2');
   mainRadio.classList.remove('palette3');
   mainRadio.classList.add('palette' + event.currentTarget.value);
@@ -22,4 +23,4 @@ paletteRadio3.addEventListener('click', showPalette);
 //EJECUTAR AL CARGAR LA PÁGINA
 
 articleRadio.classList.add('palette1');
-mainRadio.classList.remove('palette1');
+mainRadio.classList.add('palette1');

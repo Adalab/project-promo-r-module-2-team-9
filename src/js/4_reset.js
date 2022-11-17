@@ -3,13 +3,17 @@
 /* eslint-disable strict */
 function check() {
   paletteRadio1.checked = true;
+  mainRadio.classList.add('palette1');
 }
 function resetPaleta () {
   articleRadio.classList.remove('palette1');
   articleRadio.classList.remove('palette2');
   articleRadio.classList.remove('palette3');
-  articleRadio.classList.add('palette1');
   mainRadio.classList.remove('palette1');
+  mainRadio.classList.remove('palette2');
+  mainRadio.classList.remove('palette3');
+  articleRadio.classList.add('palette1');
+  mainRadio.classList.add('palette1');
 
   check ();
 //  let paletteRadio1 = paletteRadio1.value;
