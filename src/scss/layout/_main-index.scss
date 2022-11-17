@@ -8,8 +8,6 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-  // padding-left: 25.6px;
-  // padding-right: 26.4px;
   @media all and (min-width: 768px) {
     height: 90vh;
     padding: 0px 174px 59px 175px;
@@ -22,7 +20,8 @@
     &__title {
       padding-top: 0px;
       padding-bottom: 10px;
-      color: $dull-orange;
+      color: $dark-pink;
+      -webkit-text-stroke: 0.99px $dark-purple;
       font-family: $font-merri;
       font-size: 19.2px;
       font-weight: 900;
@@ -48,14 +47,13 @@
     justify-content: center;
     align-items: center;
     gap: 24px;
-    border: 1px solid rgba(225, 115, 52, 0.21);
+    border: 1px solid $dark-purple;
     border-radius: 3px;
     border-style: dotted;
     padding: 15px 20px 9.8px 20px;
     @media all and (min-width: 768px) {
       gap: 51.5px;
       padding: 15px 20px 10px;
-      border: 2px solid rgba(225, 115, 52, 0.21);
     }
     &__option {
       display: flex;
@@ -65,7 +63,7 @@
       line-height: 1.5;
     }
     &__text {
-      color: $gunmetal;
+      color: $dark-pink;
       font-size: 12.8px;
       @media all and (min-width: 768px) {
         font-size: 16px;
@@ -73,7 +71,7 @@
     }
     i {
       font-size: 22.4px;
-      color: $dull-orange;
+      color: $dark-pink;
       @media all and (min-width: 768px) {
         font-size: 30px;
       }
@@ -82,7 +80,7 @@
   .button {
     margin-top: 38.6px;
     margin-bottom: 30px;
-    background-color: black;
+    background-color: $dark-pink;
     width: 129px;
     height: 42px;
     border-radius: 21px;
@@ -94,9 +92,12 @@
     text-align: center;
     line-height: 42px;
     cursor: pointer;
+    &:hover {
+      transition: all 300ms;
+      transform: scale(1.5);
+    }
     @media all and (min-width: 768px) {
       margin-top: 60px;
-      // margin-bottom: 0px;
     }
   }
 }
