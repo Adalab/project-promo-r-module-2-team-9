@@ -3,7 +3,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable strict */
 
-const dataCard = {
+let dataCard = {
   name: '',
   job: '',
   photo: '',

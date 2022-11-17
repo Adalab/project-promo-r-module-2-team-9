@@ -2,9 +2,10 @@
 /* eslint-disable no-undef */
 /* eslint-disable strict */
 
+showData()
+
 function handleCreated(event) {
   event.preventDefault();
-  showData()
   showCreated();
   saveInfo();
 }
@@ -32,9 +33,16 @@ function saveInfo() {
 // Mostramos los datos guardados del localStorage al cargar la página
 function showData() {
   const saveDataCard = JSON.parse(localStorage.getItem('userData'));
+  console.log(saveDataCard);
   if (saveDataCard !== null){ 
-    saveDataCard = dataCard;
-    updatePreview();
+    dataCard = saveDataCard;
+    renderInputsForm();
+  }
+}
+
+function renderInputsForm() {
+  for (const valueItem of dataCard) {
+    dataCard.name = valueItem.name;
   }
 }
 
