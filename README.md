@@ -1,5 +1,7 @@
 # Proyecto grupal Awesome profile-cards
 
+![Debuggers Cards](./src/images/Logo.png)
+
 ## Autoras
 
 - Bella García - [@bellita85](https://github.com/bellita85)
