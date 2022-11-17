@@ -21,13 +21,20 @@ function resetImg () {
   profileImage.style.backgroundImage = ``;
   profilePreview.style.backgroundImage = ``;
 }
-
+function resetCreated() {
+  btnCreateCard.classList.remove('change-color-btn');
+  iconBtnCreated.classList.remove('change-color-icon');
+  shareCreated.classList.add('collapsed');
+  shareCreated.classList.remove('created');
+}
 function handleclikreset (event) {
   event.preventDefault();
   resetInput ();
   updatePreview();
   resetPaleta ();
   resetImg () ;
+  localStorage.removeItem('userData');
+  resetCreated();
 }
 
 resetBtn.addEventListener('click', handleclikreset);

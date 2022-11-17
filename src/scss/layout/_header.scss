@@ -1,14 +1,13 @@
 .header {
   text-align: center;
-  padding-top: 95px;
+  padding-top: 50px;
   padding-bottom: 0px;
-  padding-left: 35px;
-  padding-right: 35px;
-  background-color: $white-four;
+  padding-left: 50px;
+  padding-right: 0px;
+  background-color: white;
   &__img {
     object-fit: cover;
     width: 250px;
-    height: 63px;
   }
 }
 @media all and (min-width: 768px) {
@@ -17,9 +16,12 @@
     // padding-bottom: 0px;
     // padding-left: 174px;
     // padding-right: 175px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    padding-left: 100px;
+    padding-right: 0px;
     &__img {
       width: 417px;
-      height: 107px;
     }
   }
 }
