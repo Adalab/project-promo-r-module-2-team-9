@@ -9,6 +9,8 @@ function resetPaleta () {
   articleRadio.classList.remove('palette2');
   articleRadio.classList.remove('palette3');
   articleRadio.classList.add('palette1');
+  mainRadio.classList.remove('palette1');
+
   check ();
 //  let paletteRadio1 = paletteRadio1.value;
 }

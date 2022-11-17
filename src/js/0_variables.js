@@ -40,6 +40,7 @@ const paletteRadio1 = document.querySelector('.js-input-1');
 const paletteRadio2 = document.querySelector('.js-input-2');
 const paletteRadio3 = document.querySelector('.js-input-3');
 const articleRadio = document.querySelector('.js-card');
+const mainRadio = document.querySelector('.js-main');
 
 //variables created
 const shareCreated = document.querySelector('.js_created');

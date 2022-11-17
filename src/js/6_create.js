@@ -24,6 +24,7 @@ function saveInfo() {
       link.href = data;
       twitter.href = `https://twitter.com/intent/tweet?text=Aquí%20podéis%20ver%20mi%20tarjeta%20virtual&url=${data}.%20Crea%20la%20tuya%20en:%20http://beta.adalab.es/project-promo-r-module-2-team-9/`;
       localStorage.setItem('userData', JSON.stringify(dataCard));
+      console.log(dataCard);
     });
 }
 
