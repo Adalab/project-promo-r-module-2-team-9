@@ -105,6 +105,14 @@
   }
 }
 
+.icon-logo {
+  height: 35px;
+  transition: 2s;
+  &:hover {
+    transform: scale(1.25);
+  }
+}
+
 //SECCIÓN JAVASCRIPT COLORES:
 
 .palette1 {
