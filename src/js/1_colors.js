@@ -8,6 +8,11 @@ function showPalette() {
   articleRadio.classList.remove('palette3');
   articleRadio.classList.add('palette' + event.currentTarget.value);
   dataCard.palette = event.currentTarget.value;
+  mainRadio.classList.remove('palette1');
+  mainRadio.classList.remove('palette2');
+  mainRadio.classList.remove('palette3');
+  mainRadio.classList.add('palette' + event.currentTarget.value);
+  dataCard.palette = event.currentTarget.value;
 }
 
 paletteRadio1.addEventListener('click', showPalette);

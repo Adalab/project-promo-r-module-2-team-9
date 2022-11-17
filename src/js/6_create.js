@@ -24,6 +24,7 @@ function saveInfo() {
       link.href = data;
       twitter.href = `https://twitter.com/intent/tweet?text=Aquí%20podéis%20ver%20mi%20tarjeta%20virtual&url=${data}`;
       localStorage.setItem('userData', JSON.stringify(dataCard));
+      console.log(dataCard);
     });
 }
 
