@@ -1,6 +1,6 @@
 # Proyecto grupal Awesome profile-cards
 
-![Debuggers Cards](./src/images/Logo-2.png)
+![Debuggers Cards](./src/images/logo-transparente.png)
 
 ## Autoras
 
